@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="demo2.html">
+        <!-- Thẻ input phải nằm trong thẻ form  -->
+
+        <!-- Thẻ name="" còn có tác dụng gửi thông tin thẻ cùng tên trong name="" qua trang mới -->
+        <!-- Cách xuống dòng: chèn vào thẻ <p> -->         
+      <p>Name: <input type="text" name="Name"></p>
+      <p>Age : <input type="number" name="Age"></p> <!-- Chỉ nhập số -->
+      <p>Address: <textarea cols="20" rows="10"></textarea></p> <!-- Tạo ra khối nhập thông tin co giãn được <textarea> -->
+      <p>Gender: 
+        <!-- nếu đặt 2 cái cùng name="" thì nó chỉ chọn một trong 2 Male or Female, nếu có một cái <radio> khác với name khác nữa thì radio đó chọn theo name của radio đó -->
+        <input type="radio" name="gender" value="male">Male 
+        <input type="radio" name="gender" value="female">Female
+      </p> 
+
+
+<p>Hobby
+    <!-- Chọn được nhiều thuộc tính khác nhau -->
+    <input type="checkbox" name="hobby" value="game">game
+    <input type="checkbox" name="hobby" value="code">code
+    <input type="checkbox" name="hobby" value="sport">sport
+</p>
+
+<p>
+    <!-- Nhận thông tin file từ máy người đang use web (ko phải người tạo web) -->
+  File:  <input type="file" value="Chọn">
+</p>
+
+<p>
+    <!-- Xoá sạch mọi nội dung trong thẻ form nếu đặt ngoài thẻ form thì ko xoá được-->
+    <input type="reset" value="Xoá tất cả trong này">
+</p>
+
+<p>
+    <!-- Gửi dữ liệu qua trang mới xong reset lại trang -->
+    <input type="submit" value="Gửi dữ liệu">
+</p>
+
+
+    </form>
+</body>
+</html>
